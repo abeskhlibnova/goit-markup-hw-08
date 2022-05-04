@@ -1,0 +1,23 @@
+.header__logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--primary-black-color);
+    
+}
+@media screen and (min-width: 768px) {
+    .header__logo{
+        margin-right: 88px;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+    .header__logo{
+        margin-right: 94px;  
+    }
+
+}
+.logo_color_blue {
+    color: var(--accent-color);
+}

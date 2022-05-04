@@ -1,0 +1,27 @@
+.title_main {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    background-color: var(--bg--hero-footer);
+}
+
+@media screen and (min-width: 768px) {
+    .title_main {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;  
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .title_main {
+        max-width: 700px;
+        font-size: 44px;
+        line-height: 1.36;
+        }
+}
