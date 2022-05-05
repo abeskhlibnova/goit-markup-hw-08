@@ -1,3 +1,17 @@
+@media screen and (max-width: 1200px) { 
+
+.employment{
+    display: none;
+}
+
+}
+
+@media screen and (min-width: 1200px){
+
+.employment.section{
+    padding-top: 0;
+}
+
 .employment-list {
     display: flex;
     flex-direction: row;
@@ -32,4 +46,5 @@
     /* text-align: center; */
     letter-spacing: 0.03em;
     text-transform: uppercase;
+}
 }
