@@ -2,12 +2,13 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 528px;
-    height: 580px;
+    width: 450px;
+    height: 610px;
     background-color: var(--primary-white-color);
     transform: translate(-50%, -50%) scale(1);
     transition: transform 500ms var(--main-timing-function);
     padding: 40px 40px;
+    
 }
 
 .modal__close-btn {
@@ -32,3 +33,10 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+.modal {
+    width: 528px;
+    height: 580px;
+
+}
+}
