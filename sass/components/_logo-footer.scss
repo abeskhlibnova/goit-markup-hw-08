@@ -1,13 +1,29 @@
 .footer__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
     font-family: Raleway;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     color: var(--primary-white-color);
 
-    & .logo_color_blue {
-        display: inline-block;
-        margin-bottom: 20px;
-    }
+    // & .logo_color_blue {
+        
+    //     margin-bottom: 20px;
+    // }
 }
-
+@media screen and (min-width: 768px) {
+    .footer__logo {
+            justify-content: center;
+        align-items: baseline;
+    }
+    
+}
+@media screen and (min-width: 1200px) {
+        .footer__logo {
+            justify-content: flex-start;
+            
+        }
+}
