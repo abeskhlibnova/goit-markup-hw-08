@@ -332,13 +332,21 @@ img {
 }
 
 .title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-txt-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .social-list {
@@ -770,8 +778,8 @@ img {
 
 @media screen and (min-width: 480px) {
   .header {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -966,12 +974,14 @@ img {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: -30px;
 }
 
 .advantages__icon-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 120px;
   margin-bottom: 30px;
   background-color: var(--secondary-bg-color);
 }
@@ -987,6 +997,7 @@ img {
 }
 
 .advantages__subtitle {
+  text-align: center;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
@@ -1005,7 +1016,6 @@ img {
 @media screen and (min-width: 480px) {
   .advantages__icon-container {
     width: 450px;
-    height: 120px;
   }
 }
 
@@ -1030,6 +1040,9 @@ img {
   }
   .advantages-list__item:not(:nth-child(even)) {
     margin-right: 30px;
+  }
+  .advantages__subtitle {
+    text-align: left;
   }
 }
 
@@ -1101,6 +1114,7 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  margin-bottom: -30px;
 }
 
 .team-list__item {
@@ -1368,6 +1382,9 @@ img {
   .join-us {
     padding-right: 92px;
   }
+  .join-us__title {
+    justify-content: flex-start;
+  }
 }
 
 .portfolio-list {
@@ -1467,6 +1484,9 @@ img {
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
+  .portfolio-list__img {
+    width: 370px;
+  }
   .portfolio-list__item {
     flex-basis: calc((100% - 90px) / 3);
     margin-right: 30px;
